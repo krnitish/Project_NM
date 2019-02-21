@@ -16,19 +16,19 @@ import com.projectH.model.Users;
 import com.projectH.repository.RepositoryClass;
 
 @SpringBootApplication
-public class ProjectHApplication implements CommandLineRunner {
-
+public class ProjectHApplication/* implements CommandLineRunner*/ {
+/*
 	@Autowired
 	RepositoryClass repo;
 	@Autowired
-	DataSource datasource;
+	DataSource datasource;*/
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjectHApplication.class, args);
 		System.out.println("App is Running");
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 		Users users = new Users("Nitish", "Kumar", new Date(2018, 02, 12), "abc@xyz.com", "4673258764", "7047291189",
 				"Single", "Male", new Address("India", "UP", "Noida", "Sector 53"),
@@ -51,6 +51,6 @@ public class ProjectHApplication implements CommandLineRunner {
 		//repo.save(address)
 		
 		
-	}
+	}*/
 
 }

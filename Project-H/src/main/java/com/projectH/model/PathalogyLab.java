@@ -65,7 +65,6 @@ public class PathalogyLab {
 	public void setLabCountry(String labCountry) {
 		this.labCountry = labCountry;
 	}
-
 	public String getLabAssistant() {
 		return labAssistant;
 	}
