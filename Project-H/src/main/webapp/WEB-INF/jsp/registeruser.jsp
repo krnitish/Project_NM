@@ -28,13 +28,21 @@
 	<label>Phone Number</label>
 	<form:input type="text" path="mobileNo"/>
 	<br>
+	<label>Gender</label>
+	Male:<form:radiobutton path="gender" value="Male" checked="checked"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Female:<form:radiobutton path="gender" value="Female"/>
+	<br>
+	<label>Marital Status</label>
+	Unmarried:<form:radiobutton path="maritalStatus" value="Unmarried" checked="checked"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Married:<form:radiobutton path="maritalStatus" value="Married"/>
+	<br>
 	<%-- <label>Country</label>
 	<form:input type="text" path="country"/>
 	<br>  --%>
 	<%-- <label>State</label>
 	<form:input type="text" path="state"/>
 	<br> --%>
-<%-- 	<label>City</label>
+<%-- 	<label>City</label>	
 	<form:input type="text" path="city"/>
 	<br>
 	<label>Location</label>

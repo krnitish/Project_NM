@@ -29,9 +29,10 @@ public class MainController {
 		return new ModelAndView("registeruser","command",new Users());
 	}
 	@RequestMapping(value="/addnewuser" ,method=RequestMethod.POST)
-	public ModelAndView regnewuser(@RequestBody Users user,ModelAndView modelAndView)
+	public ModelAndView regnewuser(@ModelAttribute(value="user") Users user,ModelAndView modelAndView)
 	{
-		new RegisterDao().saveNewUser(user);
+		System.out.println(user);
+//		new RegisterDao().saveNewUser(user);
 		
 		return new ModelAndView("welcome","msg","Welcome to Project");
 	}
